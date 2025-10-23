@@ -86,6 +86,18 @@ def price_for_toppings(tops):
 # ---------- PAGE HEADER ----------
 st.set_page_config(page_title="The Shave Shack – Random Special", page_icon="🦈", layout="centered")
 
+st.markdown("""
+<style>
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.6rem !important;
+        white-space: nowrap !important;
+    }
+}
+</style>
+""", unsafe_allow_html=True)
+
+
 def middle(width=8):
     """Return a centered column whose width is 'width' (surrounded by 1-1 spacers)."""
     return st.columns([1, width, 1])[1]
