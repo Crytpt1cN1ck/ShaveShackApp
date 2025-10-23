@@ -1,0 +1,6 @@
+streamlit
+
+pillow
+
+streamlit>=1.33
+
